@@ -1,0 +1,14 @@
+/* Empty. Add your own CSS if you like */
+
+
+/* Common Menu */
+
+.titleMenu {
+    color: #FF0044;
+}
+
+/* Common Menu footer */
+
+.titleFooter {
+    left: -50% !important;
+}
