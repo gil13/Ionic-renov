@@ -10,7 +10,7 @@
                 url: '/app',
                 abstract: true,
                 templateUrl: 'js/common/menu.html',
-                controller: 'AppCtrl'
+                controller: 'Main'
             })
 
             .state('app.overview', {
@@ -68,6 +68,7 @@
 
             .state('app.settings', {
                 url: '/settings',
+                controller: 'Settings',
                 views: {
                     'menuContent': {
                         templateUrl: 'js/settings/settings.html'

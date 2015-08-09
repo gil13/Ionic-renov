@@ -1,5 +1,27 @@
 <ion-view view-title="Overview">
   <ion-content>
-    <h1>Overview</h1>
+
+    <div class="list list-inset">
+        <div class="item"><h2>Hello, {{model.overview.name}}</h2></div>
+    </div>
+
+    <div class="list list-inset">
+        <img class="overviewImg" src="http://cdn.home-designing.com/wp-content/uploads/2010/10/living-room-artificial-light-by-ferdaviola.jpg" alt="" />
+    </div>
+
+    <div class="list list-inset">
+        <div class="item item-divider">Last tasks done</div>
+        <div class="item" ng-repeat="item in model.overview.tasks">{{item}}</div>
+    </div>
+
+    <div class="list list-inset">
+        <div class="item">Next payment will be on {{model.overview.nextPayment.date}}</div>
+        <div class="item">{{model.overview.nextPayment.amount}} - {{model.overview.nextPayment.type}}</div>
+    </div>
+
+    <div class="list list-inset">
+        <progress min="0" max="100" value="{{model.overview.progress}}"></progress>
+    </div>
+
   </ion-content>
 </ion-view>

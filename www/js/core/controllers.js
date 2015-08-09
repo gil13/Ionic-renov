@@ -3,14 +3,87 @@
 
     angular
         .module('starter.controllers', [])
-        .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
+        .controller('Main', function($scope, $ionicModal, $timeout) {
 
-          // With the new view caching in Ionic, Controllers are only called
-          // when they are recreated or on app start, instead of every page change.
-          // To listen for when this page is active (for example, to refresh data),
-          // listen for the $ionicView.enter event:
-          //$scope.$on('$ionicView.enter', function(e) {
-          //});
+            /*** MOCK ***/
+
+            $scope.model = {
+                personalData : {
+                    name : 'Pepe Guay',
+                    address : 'Calle Mayor 5, 2A',
+                    phone : '+34 656 78 79 70',
+                    email : 'test@gmail.com',
+                    genre : 'male',
+                    avatar: 'http://www.thepoliticalscientist.org/wp-content/uploads/2014/04/avatar_male_gray_on_light_200x200_1.png'
+                },
+
+                overview : {
+                    name: 'Pepe',
+                    photo: '',
+                    tasks : [
+                        'Change phone line',
+                        'Paint bath wall'
+                    ],
+                    nextPayment: {
+                        date: '22/09/2015',
+                        amount: '425.45€',
+                        type: 'Bank transfer'
+                    },
+                    progress: '76'
+                },
+
+                tasks : {
+                    toDo : [
+                        'New windows in kitchen',
+                        'Fix garden door'
+                    ],
+                    doing : [
+                        'Test TV',
+                        'Replace mirror'
+                    ],
+                    done : [
+                        'Change phone line',
+                        'Paint bath wall'
+                    ]
+                },
+
+                documents : [
+                    {
+                        name : 'Contract (PDF)',
+                        url : ''
+                    },
+                    {
+                        name : 'Last invoice (PDF)',
+                        url : ''
+                    },
+                    {
+                        name : 'Insurance receipt (PDF)',
+                        url : ''
+                    },
+                    {
+                        name : 'Appliances List (XLS)',
+                        url : ''
+                    }
+                ],
+
+                photos : [
+                    {
+                        before : '',
+                        after : ''
+                    },
+                    {
+                        before : '',
+                        after : ''
+                    }
+                ],
+            }
+
+            $scope.$on('$ionicView.afterEnter', function(){
+                setTimeout(function(){
+                    document.getElementById("splash").style.display = "none";      
+                }, 3000);
+            });
+
 
           // Form data for the login modal
           $scope.loginData = {};
@@ -42,19 +115,5 @@
               $scope.closeLogin();
             }, 1000);
           };
-        })
-
-        // .controller('PlaylistsCtrl', function($scope) {
-        //   $scope.playlists = [
-        //     { title: 'Reggae', id: 1 },
-        //     { title: 'Chill', id: 2 },
-        //     { title: 'Dubstep', id: 3 },
-        //     { title: 'Indie', id: 4 },
-        //     { title: 'Rap', id: 5 },
-        //     { title: 'Cowbell', id: 6 }
-        //   ];
-        // })
-        //
-        // .controller('PlaylistCtrl', function($scope, $stateParams) {
-        // });
+      });
 })()
