@@ -9,12 +9,13 @@
 
             $scope.model = {
                 personalData : {
-                    name : 'Pepe Guay',
+                    name : 'Pepe',
+                    surname: 'Guay Perez',
                     address : 'Calle Mayor 5, 2A',
                     phone : '+34 656 78 79 70',
                     email : 'test@gmail.com',
                     genre : 'male',
-                    avatar: 'http://www.thepoliticalscientist.org/wp-content/uploads/2014/04/avatar_male_gray_on_light_200x200_1.png'
+                    avatar: 'http://themes.justgoodthemes.com/demo/getready/full-blue/images/John_Doe.jpg'
                 },
 
                 overview : {
@@ -47,21 +48,50 @@
                     ]
                 },
 
+                payment : {
+                    final : {
+                        total : '5026,47€',
+                        paid : '3470,56€',
+                        remaining: '1555,91€'
+                    },
+                    done : [
+                        {
+                            date : '15/06/2015',
+                            amount : '650,90€',
+                            url : ''
+                        },
+                        {
+                            date : '05/12/2014',
+                            amount : '896,90€',
+                            url : ''
+                        },
+                        {
+                            date : '15/06/2015',
+                            amount : '325,90€',
+                            url : ''
+                        }
+                    ]
+                },
+
                 documents : [
                     {
-                        name : 'Contract (PDF)',
+                        name : 'Contract',
+                        type: 'PDF',
                         url : ''
                     },
                     {
-                        name : 'Last invoice (PDF)',
+                        name : 'Last invoice',
+                        type: 'PDF',
                         url : ''
                     },
                     {
-                        name : 'Insurance receipt (PDF)',
+                        name : 'Insurance receipt',
+                        type: 'PDF',
                         url : ''
                     },
                     {
-                        name : 'Appliances List (XLS)',
+                        name : 'Appliances List',
+                        type: 'XLS',
                         url : ''
                     }
                 ],
@@ -80,7 +110,7 @@
 
             $scope.$on('$ionicView.afterEnter', function(){
                 setTimeout(function(){
-                    document.getElementById("splash").style.display = "none";      
+                    document.getElementById("splash").style.display = "none";
                 }, 3000);
             });
 
