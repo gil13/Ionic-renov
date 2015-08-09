@@ -1,5 +1,35 @@
 <ion-view view-title="Bills">
-  <ion-content>
-    <h1>Bills</h1>
-  </ion-content>
+    <ion-content>
+
+    <div class="list card">
+        <a class="item item-divider">Next Payment
+            <span class="item-note">{{model.overview.nextPayment.date}}</span>
+        </a>
+        <a class="item">{{model.overview.nextPayment.type}}
+            <span class="item-note">{{model.overview.nextPayment.amount}}</span>
+        </a>
+    </div>
+
+
+    <div class="list card">
+        <a class="item item-divider">Total
+            <span class="item-note"><strong>{{model.payment.final.total}}</strong></span>
+        </a>
+        <a class="item">Paid
+            <span class="item-note">{{model.payment.final.paid}}</span>
+        </a>
+        <a class="item">Remaining
+            <span class="item-note">{{model.payment.final.remaining}}</span>
+        </a>
+    </div>
+
+    <div class="list card">
+        <div class="item item-divider">Done</div>
+        <a class="item" href="{{item.url}}"  ng-repeat="item in model.payment.done">
+        {{item.date}}
+            <span class="item-note">{{item.amount}}</span>
+        </a>
+    </div>
+
+    </ion-content>
 </ion-view>
