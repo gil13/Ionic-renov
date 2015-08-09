@@ -5,15 +5,23 @@
             <div class="item item-avatar">
                 <img src="{{model.personalData.avatar}}">
                 <h2>{{model.personalData.name}}</h2>
-                <p>{{model.personalData.address}}</p>
+                <p>{{model.personalData.surname}}</p>
             </div>
+            <a class="item" href="#">
+                Address
+                <span class="item-note">{{model.personalData.address}}</span>
+            </a>
+            <a class="item" href="#">
+                Phone
+                <span class="item-note">{{model.personalData.phone}}</span>
+            </a>
+            <a class="item" href="#">
+                Email
+                <span class="item-note">{{model.personalData.email}}</span>
+            </a>
         </div>
 
         <div class="list card">
-
-            <a href="#" class="item item-icon-left" ng-click="personalData()">
-                <i class="icon ion-home"></i>Show personal data
-            </a>
 
             <a href="#/app/settings/language" class="item item-icon-left">
                 <i class="icon ion-arrow-right-c"></i>Language

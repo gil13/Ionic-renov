@@ -1,16 +1,18 @@
 <ion-view view-title="Tasks">
     <ion-content>
 
-        <div class="list list-inset">
+        <div class="list card">
             <div class="item item-divider">To do</div>
-            <a class="item" ng-repeat="item in model.tasks.toDo">{{item}}</a>
+            <div class="item item-text-wrap" ng-repeat="item in model.tasks.toDo">{{item}}</a></div>
 
             <div class="item item-divider">Doing</div>
-            <a class="item" ng-repeat="item in model.tasks.doing">{{item}}</a>
+            <div class="item item-text-wrap" ng-repeat="item in model.tasks.doing">{{item}}</a></div>
 
             <div class="item item-divider">Done</div>
-            <a class="item" ng-repeat="item in model.tasks.done">{{item}}</a>
+            <div class="item item-text-wrap" ng-repeat="item in model.tasks.done">{{item}}</a></div>
+        </div>
 
+        <div class="list list-inset">
             <div class="item item-divider">New task</div>
 
             <label class="item item-input">

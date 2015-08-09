@@ -9,14 +9,14 @@
         <img class="overviewImg" src="http://cdn.home-designing.com/wp-content/uploads/2010/10/living-room-artificial-light-by-ferdaviola.jpg" alt="" />
     </div>
 
-    <div class="list list-inset">
+    <div class="list card">
         <div class="item item-divider">Last tasks done</div>
-        <div class="item" ng-repeat="item in model.overview.tasks">{{item}}</div>
+        <div class="item item-text-wrap" ng-repeat="item in model.overview.tasks">{{item}}</div>
     </div>
 
-    <div class="list list-inset">
-        <div class="item">Next payment will be on {{model.overview.nextPayment.date}}</div>
-        <div class="item">{{model.overview.nextPayment.amount}} - {{model.overview.nextPayment.type}}</div>
+    <div class="list card">
+        <div class="item item-text-wrap">Next payment will be on {{model.overview.nextPayment.date}}</div>
+        <div class="item item-text-wrap">{{model.overview.nextPayment.amount}} - {{model.overview.nextPayment.type}}</div>
     </div>
 
     <div class="list list-inset">
