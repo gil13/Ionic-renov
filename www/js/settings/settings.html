@@ -1,5 +1,33 @@
 <ion-view view-title="Settings">
     <ion-content>
 
+        <div class="list card">
+            <div class="item item-avatar">
+                <img src="{{model.personalData.avatar}}">
+                <h2>{{model.personalData.name}}</h2>
+                <p>{{model.personalData.address}}</p>
+            </div>
+        </div>
+
+        <div class="list card">
+
+            <a href="#" class="item item-icon-left" ng-click="personalData()">
+                <i class="icon ion-home"></i>Show personal data
+            </a>
+
+            <a href="#/app/settings/language" class="item item-icon-left">
+                <i class="icon ion-arrow-right-c"></i>Language
+            </a>
+
+            <a href="#" class="item item-icon-left">
+                <i class="icon ion-ios-email"></i>Send error
+            </a>
+
+            <a href="#" class="item item-icon-left">
+                <i class="icon ion-ios-loop"></i>Check for updates
+            </a>
+
+        </div>
+
     </ion-content>
 </ion-view>

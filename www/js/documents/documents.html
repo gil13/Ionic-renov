@@ -1,13 +1,10 @@
 <ion-view view-title="Documents">
     <ion-content>
-        
+
         <div class="list list-inset">
             <div class="item item-divider">Documents</div>
 
-            <a class="item" href="#">Invoice (PDF)</a>
-            <a class="item" href="#">Contract (PDF)</a>
-            <a class="item" href="#">Insurance (PDF)</a>
-            <a class="item" href="#">Electricity diagram (PDF)</a>
+            <a class="item" ng-repeat="item in model.documents" href="{{item.url}}">{{item.name}}</a>
         </div>
 
     </ion-content>

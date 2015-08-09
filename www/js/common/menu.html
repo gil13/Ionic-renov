@@ -21,7 +21,6 @@
     <ion-content>
       <ion-list>
         <ion-item menu-close href="#/app/overview">Overview</ion-item>
-        <ion-item menu-close ng-click="login()">Login</ion-item>
         <ion-item menu-close href="#/app/photos">Photos</ion-item>
         <ion-item menu-close href="#/app/documents">Documents</ion-item>
         <ion-item menu-close href="#/app/tasks">Tasks</ion-item>
@@ -32,9 +31,8 @@
     </ion-content>
 
     <div class="bar bar-footer bar-dark">
-        <div class="title titleFooter">Footer</div>
-        <button class="button icon ion-gear-a"></button>
-        <button class="button icon ion-gear-a"></button>
+        <div class="title titleFooter" ng-click="login()">Login</div>
+        <button class="button icon ion-gear-a whiteBorder" ng-click="goToSettings()"></button>
     </div>
 
   </ion-side-menu>

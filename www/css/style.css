@@ -1,6 +1,15 @@
 /* Empty. Add your own CSS if you like */
 
 
+/*** Splash ***/
+
+.splash {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    height: 100%;
+}
+
 /* Common Menu */
 
 .titleMenu {
@@ -11,4 +20,14 @@
 
 .titleFooter {
     left: -50% !important;
+}
+
+.whiteBorder {
+    border-color: #444 !important;
+}
+
+/*** Overview ***/
+
+.overviewImg {
+    width: 100%;
 }
