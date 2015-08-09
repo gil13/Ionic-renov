@@ -1,19 +1,35 @@
 <ion-view view-title="Photos">
   <ion-content>
 
+    <div class="list card">
+        <div class="item">Before</div>
         <ion-slide-box on-slide-changed="slideHasChanged($index)">
             <ion-slide>
-                <div class="box blue"><h1>BLUE</h1></div>
+                <img class="overviewImg" src="http://cdn.home-designing.com/wp-content/uploads/2010/10/living-room-artificial-light-by-ferdaviola.jpg" alt="" />
             </ion-slide>
             <ion-slide>
-                <div class="box yellow"><h1>YELLOW</h1></div>
+                <img class="overviewImg" src="http://cdn.home-designing.com/wp-content/uploads/2010/10/living-room-artificial-light-by-ferdaviola.jpg" alt="" />
             </ion-slide>
             <ion-slide>
-                <div class="box pink"><h1>PINK</h1></div>
+                <img class="overviewImg" src="http://cdn.home-designing.com/wp-content/uploads/2010/10/living-room-artificial-light-by-ferdaviola.jpg" alt="" />
             </ion-slide>
         </ion-slide-box>
+    </div>
 
-        <hr>
+    <div class="list card">
+        <ion-slide-box on-slide-changed="slideHasChanged($index)">
+            <div class="item">After</div>
+            <ion-slide>
+                <img class="overviewImg" src="http://cdn.home-designing.com/wp-content/uploads/2010/10/living-room-artificial-light-by-ferdaviola.jpg" alt="" />
+            </ion-slide>
+            <ion-slide>
+                <img class="overviewImg" src="http://cdn.home-designing.com/wp-content/uploads/2010/10/living-room-artificial-light-by-ferdaviola.jpg" alt="" />
+            </ion-slide>
+            <ion-slide>
+                <img class="overviewImg" src="http://cdn.home-designing.com/wp-content/uploads/2010/10/living-room-artificial-light-by-ferdaviola.jpg" alt="" />
+            </ion-slide>
+        </ion-slide-box>
+    </div>
 
   </ion-content>
 </ion-view>
