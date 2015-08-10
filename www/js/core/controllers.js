@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('starter.controllers', [])
+        .module('renov8.controllers', [])
         .controller('Main', function($scope, $ionicModal, $timeout) {
 
             /*** MOCK ***/

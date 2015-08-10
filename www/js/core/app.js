@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('starter', ['ionic'])
+        .module('renov8', ['ionic'])
         .run(function($ionicPlatform) {
             $ionicPlatform.ready(function() {
             // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard

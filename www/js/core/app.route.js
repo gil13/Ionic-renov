@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('starter', ['ionic', 'starter.controllers'])
+        .module('renov8', ['ionic', 'renov8.controllers'])
         .config(function($stateProvider, $urlRouterProvider) {
             $stateProvider
 
